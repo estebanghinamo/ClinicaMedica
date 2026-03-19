@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ubp.edu.ar.tpintegrador.controladores.DetHistoriaClinicaControlador">
+   <children>
+      <Label layoutX="31.0" layoutY="33.0" text="Nro HistorialClinico:" />
+      <Label layoutX="27.0" layoutY="65.0" text="Nombre del Paciente:" />
+      <Label layoutX="27.0" layoutY="101.0" text="Dni del Paciente:" />
+      <TextField fx:id="txtNro" layoutX="151.0" layoutY="29.0" prefHeight="17.0" prefWidth="74.0" promptText="......" />
+      <TextField fx:id="txtNombre" layoutX="151.0" layoutY="61.0" prefHeight="25.0" prefWidth="180.0" promptText=".........." />
+      <TextField fx:id="txtDni" layoutX="151.0" layoutY="97.0" promptText="........." />
+      <TableView fx:id="tableView" layoutX="33.0" layoutY="135.0" prefHeight="210.0" prefWidth="539.0">
+        <columns>
+          <TableColumn fx:id="ColumnaNroOrden" prefWidth="194.0" text="nroOrden" />
+          <TableColumn fx:id="ColumnaServicio" prefWidth="153.0" text="Servicio" />
+            <TableColumn fx:id="ColumnaMEDPROF" prefWidth="191.0" text="Medico/Profecional" />
+        </columns>
+      </TableView>
+      <Button fx:id="BTNRectificarHC" layoutX="415.0" layoutY="349.0" mnemonicParsing="false" onAction="#opcRectificar" prefHeight="31.0" prefWidth="155.0" text=" RectificarHistorialClinico" />
+   </children>
+</Pane>

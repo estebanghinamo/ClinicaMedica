@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ubp.edu.ar.tpintegrador.controladores.PrincipalControlador">
+    <children>
+        <Label fx:id="welcomeText" layoutX="38.0" layoutY="61.0" text="Bienvenido al Sistema">
+            <font>
+                <Font size="24.0" />
+            </font></Label>
+        <Button fx:id="BtnRecepcionista" layoutX="38.0" layoutY="146.0" mnemonicParsing="false" onAction="#opcRecepcionista" prefHeight="75.0" prefWidth="115.0" text="Recepcionista" />
+        <Button fx:id="BtnAdministracion" layoutX="185.0" layoutY="146.0" mnemonicParsing="false" onAction="#opcAdministracion" prefHeight="75.0" prefWidth="115.0" text="Administración" />
+        <Button fx:id="BtnProfesional" layoutX="324.0" layoutY="146.0" mnemonicParsing="false" onAction="#opcProfesional" prefHeight="75.0" prefWidth="115.0" text="Profesional" />
+        <Button fx:id="BtnMedico" layoutX="462.0" layoutY="146.0" mnemonicParsing="false" onAction="#opcMedico" prefHeight="75.0" prefWidth="115.0" text="Médico" />
+        <Label fx:id="welcomeText1" layoutX="38.0" layoutY="113.0" text="Seleccione una opcion:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

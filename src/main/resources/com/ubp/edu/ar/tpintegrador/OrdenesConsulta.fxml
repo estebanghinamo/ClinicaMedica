@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ubp.edu.ar.tpintegrador.controladores.OrdenesConsultaControlador">
+    <children>
+      <Button fx:id="btnAtras" layoutX="541.0" layoutY="14.0" mnemonicParsing="false" onAction="#opcAtras" prefHeight="33.0" prefWidth="43.0" text="atras" />
+        <TextField fx:id="txtBuscar" layoutX="181.0" layoutY="50.0" promptText="Ingrese un dni" />
+        <Button fx:id="btnBuscar" layoutX="330.0" layoutY="50.0" mnemonicParsing="false" onAction="#opcBuscar" text="Buscar" />
+        <Button fx:id="BTNGenerarOrdenOC" layoutX="24.0" layoutY="346.0" mnemonicParsing="false" onAction="#opcGenerarOrden" text="Generar Orden" />
+        <Button fx:id="btnVerOrden" layoutX="438.0" layoutY="346.0" mnemonicParsing="false" onAction="#opcVerOrden" text="Ver Orden" />
+      <Button fx:id="BtnEliminarOrdenOC1" layoutX="235.0" layoutY="346.0" mnemonicParsing="false" onAction="#opcEliminarOrden" text="Eliminar Orden" />
+        <TableView fx:id="tableView" layoutX="14.0" layoutY="91.0" prefHeight="247.0" prefWidth="568.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.627381641922966">
+            <columns>
+                <TableColumn fx:id="columnNro" prefWidth="147.0" text="Nro" />
+                <TableColumn fx:id="columnNombre" prefWidth="211.0" text="NombrePaciente" />
+                <TableColumn fx:id="columnDni" prefWidth="209.0" text="DNIPaciente" />
+            </columns>
+        </TableView>
+    </children>
+</Pane>

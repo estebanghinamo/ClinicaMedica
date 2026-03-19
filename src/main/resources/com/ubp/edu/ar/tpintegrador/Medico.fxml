@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ubp.edu.ar.tpintegrador.controladores.MedicoControlador">
+   <children>
+      <Button fx:id="BTNRegDiagM" layoutX="36.0" layoutY="348.0" mnemonicParsing="false" onAction="#opcRegistrarDiagnostico" prefHeight="30.0" prefWidth="182.0" text="Registrar Diagnostico" />
+      <Button fx:id="BTNBuscarA" layoutX="522.0" layoutY="123.0" mnemonicParsing="false" onAction="#opcBuscar" prefHeight="30.0" prefWidth="64.0" text="Buscar" />
+      <TextField fx:id="txtDni" layoutX="300.0" layoutY="123.0" prefHeight="30.0" prefWidth="217.0" />
+      <TableView fx:id="tableView" layoutX="16.0" layoutY="168.0" prefHeight="160.0" prefWidth="567.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0">
+         <columns>
+            <TableColumn fx:id="columnNro" prefWidth="147.0" text="Nro" />
+            <TableColumn fx:id="columnNombre" prefWidth="211.0" text="NombrePaciente" />
+            <TableColumn fx:id="columnDni" prefWidth="209.0" text="DNIPaciente" />
+         </columns>
+      </TableView>
+      <Button fx:id="BTNAtrasM" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#opcAtras" text="Atrás" />
+      <Label layoutX="58.0" layoutY="130.0" text="Medico" />
+      <ComboBox fx:id="cmbMedico" layoutX="112.0" layoutY="126.0" prefWidth="150.0" />
+      <Label layoutX="384.0" layoutY="100.0" text="Dni Paciente" />
+      <Label layoutX="57.0" layoutY="67.0" text="Servicio" />
+      <ComboBox fx:id="cmbServicio" layoutX="112.0" layoutY="63.0" onAction="#opcServicio" prefWidth="150.0" />
+   </children>
+</Pane>

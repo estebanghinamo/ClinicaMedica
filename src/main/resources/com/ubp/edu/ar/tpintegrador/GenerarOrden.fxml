@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ubp.edu.ar.tpintegrador.controladores.GenerarOrdenControlador">
+    <children>
+        <Label layoutX="14.0" layoutY="14.0" text="Nro Orden:" />
+        <TextField fx:id="txtNroOrden" layoutX="74.0" layoutY="10.0" />
+        <Label layoutX="13.0" layoutY="52.0" text="Buscar por DNI:" />
+        <Label layoutX="33.0" layoutY="115.0" text="Servicio:" />
+        <Label layoutX="14.0" layoutY="151.0" text="Medico/Profesional" />
+        <Label layoutX="13.0" layoutY="191.0" text="Tipo de Consulta" />
+        <Label layoutX="252.0" layoutY="191.0" text="Costo" />
+        <Button fx:id="BTNRegPacGO" layoutX="78.0" layoutY="335.0" mnemonicParsing="false" onAction="#opcRegistrarPaciente" text="Registrar Paciente" />
+        <Button fx:id="BTNConfirmarGO" layoutX="255.0" layoutY="335.0" mnemonicParsing="false" onAction="#opcConfirmarOrden" text="Confirmar" />
+        <Button fx:id="BTNCancelarGO" layoutX="392.0" layoutY="335.0" mnemonicParsing="false" onAction="#opcCancelarOrden" text="Cancelar" />
+        <TextField fx:id="txtDni" layoutX="103.0" layoutY="48.0" promptText="Ingrese datos..." />
+        <TextField fx:id="txtNombre" layoutX="85.0" layoutY="79.0" prefHeight="25.0" prefWidth="127.0" />
+        <ComboBox fx:id="cmbServicio" layoutX="102.0" layoutY="111.0" onAction="#opcServicio" prefWidth="150.0" />
+        <ComboBox fx:id="cmbMedico" layoutX="134.0" layoutY="147.0" prefWidth="150.0" />
+        <ComboBox fx:id="cmbTipoConsulta" layoutX="117.0" layoutY="188.0" onAction="#opcTipoConsulta" prefHeight="25.0" prefWidth="103.0" />
+        <TextField fx:id="txtCosto" layoutX="300.0" layoutY="187.0" />
+      <Label layoutX="16.0" layoutY="83.0" text="Nombre" />
+      <TextField fx:id="txtApellido" layoutX="284.0" layoutY="79.0" prefHeight="25.0" prefWidth="127.0" />
+      <Label layoutX="230.0" layoutY="83.0" text="Apellido" />
+      <Button fx:id="btnBuscar" layoutX="255.0" layoutY="48.0" mnemonicParsing="false" onAction="#opcBuscarDni" text="Buscar" />
+    </children>
+</Pane>
